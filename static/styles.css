@@ -40,11 +40,21 @@ nav ul li a {
 
 main {
     margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
-/* main .spartan-team {
-    background: ;
-} */
+main h2 p {
+    flex-direction: column;
+    font-size: 1000px;
+}
+
+.group-image {
+    width: 500px; /* Adjust the desired width */
+    margin-left: auto;
+    border-radius: 10px;
+}
 
 footer {
     background-color: #333;
