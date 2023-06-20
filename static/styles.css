@@ -11,6 +11,11 @@ header {
     text-align: center;
 }
 
+header .spartan-icon {
+    width: 170px;  /* Adjust the desired width */
+    height: auto; /* Automatically adjust height while maintaining the aspect ratio */
+}
+
 nav {
     background-color: #f3f341;
     padding: 10px;
@@ -27,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #6d6c6cf3;
+    color: #3a3939;
     padding: 10px;
     text-decoration: none;
     font-weight: bold
@@ -36,6 +41,10 @@ nav ul li a {
 main {
     margin: 20px;
 }
+
+/* main .spartan-team {
+    background: ;
+} */
 
 footer {
     background-color: #333;
