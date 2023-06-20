@@ -12,12 +12,12 @@ header {
 }
 
 header .spartan-icon {
-    width: 170px;  /* Adjust the desired width */
+    width: 130px;  /* Adjust the desired width */
     height: auto; /* Automatically adjust height while maintaining the aspect ratio */
 }
 
 nav {
-    background-color: #f3f341;
+    background-color: #F8E019;
     padding: 10px;
 }
 
@@ -42,22 +42,21 @@ main {
     margin: 20px;
     display: flex;
     align-items: center;
-    flex-direction: row;
-}
-
-main h2 p {
-    flex-direction: column;
-    font-size: 1000px;
 }
 
 .group-image {
+    float: left;
+    margin-right: 20px; /* Adjust the desired margin */
     width: 500px; /* Adjust the desired width */
-    margin-left: auto;
     border-radius: 10px;
 }
 
+main h2, p {
+    text-align: center;
+}
+
 footer {
-    background-color: #333;
+    background-color: #2752fb;
     color: #fff;
     padding: 10px;
     text-align: center;
