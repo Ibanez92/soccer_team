@@ -66,10 +66,6 @@ main {
     border-radius: 10px;
 }
 
-main h2, p {
-    text-align: center;
-}
-
 footer {
     background-color: #2752fb;
     color: #fff;
