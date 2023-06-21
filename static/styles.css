@@ -7,12 +7,12 @@ body {
 header {
     background-color: #2752fb;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 header .spartan-icon {
-    width: 130px;  /* Adjust the desired width */
+    width: 150px;  /* Adjust the desired width */
     height: auto; /* Automatically adjust height while maintaining the aspect ratio */
 }
 
