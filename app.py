@@ -4,10 +4,6 @@ from email.message import EmailMessage
 
 app = Flask(__name__)
 
-# @app.route('/')
-# def home():
-#     return 'Welcome to the soccer team website!'
-
 @app.route('/players')
 def players():
     return 'List of players'
@@ -20,11 +16,11 @@ def schedule():
 def home():
     return render_template('home.html')
 
-@app.route('/submit_contact_form', methods=['GET'])
+@app.route('/', methods=['GET'])
 def contact():
     return render_template('home.html')
 
-@app.route('/submit_contact_form', methods=['POST'])
+@app.route('/', methods=['POST'])
 def submit_contact_form():
     name = request.form.get('name')
     email = request.form.get('email')
@@ -35,11 +31,12 @@ def submit_contact_form():
     msg.set_content(f"Name: {name}\nEmail: {email}\nMessage: {message}")
     msg['Subject'] = 'New Contact Form Submission'
     msg['From'] = email  # Set the sender's email address
-    msg['To'] = 'JavierIbanez92@outlook.com'  # Set your email address as the recipient
+    msg['To'] = 'expertprep2015@gmail.com'  # Set your email address as the recipient
 
     # Set up SMTP server and send email
-    with smtplib.SMTP('outlook.office365.com', 993) as smtp:
-        smtp.login('JavierIbanez92@outlook.com', 'Oleo0507!')
+    with smtplib.SMTP('smtp.office365.com', 587) as smtp:
+        smtp.starttls()
+        smtp.login('expertprep2015@gmail.com', '')
         smtp.send_message(msg)
 
     return "Thank you for your message!"
