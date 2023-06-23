@@ -34,9 +34,8 @@ def submit_contact_form():
     msg['To'] = 'expertprep2015@gmail.com'  # Set your email address as the recipient
 
     # Set up SMTP server and send email
-    with smtplib.SMTP('smtp.office365.com', 587) as smtp:
-        smtp.starttls()
-        smtp.login('expertprep2015@gmail.com', '')
+    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+        smtp.login('expertprep2015@gmail.com', 'pbetzfynskbsncye')
         smtp.send_message(msg)
 
     return "Thank you for your message!"
