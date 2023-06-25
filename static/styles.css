@@ -53,6 +53,13 @@ main {
     text-align: center;
 }
 
+.contact-form {
+    /* flex-direction: column; */
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
 .description {
     margin-top: 10px; /* Adjust the desired margin */
     margin-right: 60px;
