@@ -54,11 +54,25 @@ main {
 }
 
 .contact-form {
-    /* flex-direction: column; */
+    /* display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    flex-wrap: wrap;
+    justify-content: center; */
+    /* flex-wrap: wrap; */
+    display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  min-height: 100%;
+  text-align: center;
+  margin-bottom: 25px;
 }
+
+.form-element {
+    width: 100%;
+    max-width: 200px; /* Adjust the width as needed */
+  }
 
 .description {
     margin-top: 10px; /* Adjust the desired margin */
