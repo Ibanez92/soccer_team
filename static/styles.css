@@ -64,8 +64,8 @@ main {
 }
 
 .form-element {
-    width: 100%;
-    max-width: 200px; /* Adjust the width as needed */
+    max-width: 400px;
+    margin: 0 auto;
   }
 
 .description {
@@ -73,6 +73,42 @@ main {
     margin-right: 60px;
     margin-left: 40px;
 }
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Input field styling */
+input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  
+  /* Submit button styling */
+button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+button[type="submit"]:focus {
+    outline: none;
+  }
 
 .group-image {
     margin-right: 40 px;
@@ -87,3 +123,13 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+ /* Responsive styling for smaller screens */
+  @media screen and (max-width: 480px) {
+    .form-element {
+      max-width: 100%;
+    }
+    .body {
+        max-width: 100%;
+    }
+  }

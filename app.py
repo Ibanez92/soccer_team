@@ -6,11 +6,8 @@ app = Flask(__name__)
 
 @app.route('/players')
 def players():
-    return 'List of players'
+    return render_template('players.html')
 
-@app.route('/schedule')
-def schedule():
-    return 'Team schedule'
 
 @app.route('/')
 def home():
