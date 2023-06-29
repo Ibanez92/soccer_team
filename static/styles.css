@@ -57,6 +57,11 @@ nav ul li a {
 .group-image {
     width: 400px;
     border-radius: 10px;
+    margin-right: 40 px;
+    /* Adjust the desired margin */
+    margin-right: 40px;  
+    /* Adjust the desired width */
+    width: 500px; 
 }
 
 .description {
