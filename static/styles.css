@@ -124,6 +124,46 @@ footer {
     text-align: center;
 }
 
+.calendar-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .calendar {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .calendar caption {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .calendar tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .calendar td {
+    padding: 10px;
+  }
+  
+  .calendar td.date {
+    font-weight: bold;
+  }
+  
+  .contact-form {
+    width: 100%;
+    /* Add your desired styling for the contact form */
+  }
+  
+  @media screen and (max-width: 480px) {
+    .calendar-container {
+      flex-direction: column;
+    }
+  }
+
  /* Responsive styling for smaller screens */
   @media screen and (max-width: 480px) {
     .form-element {
