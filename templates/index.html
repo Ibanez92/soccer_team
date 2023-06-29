@@ -20,80 +20,66 @@
             </ul>
         </nav>
         <main>
-            <img class="group-image" src="{{ url_for('static', filename='images/spartan_teamv3.png') }}" alt="Group Image">
             <div class="content">
-                <div class="title">
-                    <h2>Welcome to the U8 Spartan's website!</h2>
+                <div class="team-info">
+                    <img class="group-image" src="{{ url_for('static', filename='images/spartan_teamv3.png') }}" alt="Group Image">
                 </div>
-                <div class="description">
-                    <p>Join us on our exciting soccer journey as we showcase the talent and growth of our [Grassroots U8 Soccer Team Name]. Your unwavering support creates a positive atmosphere for our players to thrive. Come cheer for our talented boys and girls as they demonstrate their skills and determination throughout the season.</p>
+                <div class="team-info">
+                    <div
+                        class="description"><!-- Description content -->
+                        <p>Join us on our exciting soccer journey as we showcase the talent and growth of our [Grassroots U8 Soccer Team Name]. Your unwavering support creates a positive atmosphere for our players to thrive. Come cheer for our talented boys and girls as they demonstrate their skills and determination throughout the season.</p>
 
-                    <p>informed and engaged by visiting our team website regularly for the latest schedule of practices, games, and events. We will provide details on practice times, game locations, and any additional activities.</p>
+                        <p>informed and engaged by visiting our team website regularly for the latest schedule of practices, games, and events. We will provide details on practice times, game locations, and any additional activities.</p>
 
-                    <p>Together, let's create lasting memories and inspire a lifelong passion for soccer in our young athletes. Thank you for being an integral part of our team. If you have any questions or need further information, please feel free to contact me directly. I'm here to support and assist you in any way I can.</p>
+                        <p>Together, let's create lasting memories and inspire a lifelong passion for soccer in our young athletes. Thank you for being an integral part of our team. If you have any questions or need further information, please feel free to contact me directly. I'm here to support and assist you in any way I can.</p>
 
-                    <p>Sincerely,</p>
-                    <p>Coach Javier Ibanez</p>
-
-
+                        <p>Sincerely,</p>
+                        <p>Coach Javier Ibanez</p>
+                    </div>
                 </div>
             </div>
 
+            <div class="content">
+                <div class="calendar-container">
+                    <table
+                        class="calendar"><!-- Calendar table content -->
+                        <caption>Upcoming Events</caption>
+                            <tbody>
+                                <tr>
+                                    <td class="date">June 25</td>
+                                    <td class="event">Game</td>
+                                    <td class="team-color">Color</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">July 2</td>
+                                    <td class="event">Practice</td>
+                                    <td class="team-color">Color</td>
+                                </tr>
+                                <!-- Add more rows for each event -->
+                            </tbody>
+                    </table>
+                </div>
 
+                <div class="contact-form">
+                    <h3>Contact Me</h3>
+                    <form
+                        class="form-element" method="POST" action="{{ url_for('submit_contact_form') }}"><!-- Contact form content -->
+                        <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+
+                            <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
         </main>
-
-        <div class="contact-form">
-            <h3>Contact Me</h3>
-            <form class='form-element' method="POST" action="{{ url_for('submit_contact_form') }}">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-
-        <div class="calendar-container">
-            <table class="calendar">
-              <caption>Upcoming Events</caption>
-              <tbody>
-                <tr>
-                  <td class="date">June 25</td>
-                  <td class="event">Game</td>
-                  <td class="team-color">Color</td>
-                </tr>
-                <tr>
-                  <td class="date">July 2</td>
-                  <td class="event">Practice</td>
-                  <td class="team-color">Color</td>
-                </tr>
-                <!-- Add more rows for each event -->
-              </tbody>
-            </table>
-            <form class="contact-form">
-              <!-- Your contact form code goes here -->
-            </form>
-          </div>
-        
         <footer>
             <p>&copy; 2023 Soccer Team. All rights reserved.</p>
         </footer>
     </body>
-</html>
-
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body></body>
 </html>
