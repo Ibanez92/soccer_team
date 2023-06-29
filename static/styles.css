@@ -52,16 +52,13 @@ nav ul li a {
     display: flex;
     align-items: center;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 .group-image {
-    width: 400px;
+    width: 460px;
     border-radius: 10px;
-    margin-right: 40 px;
-    /* Adjust the desired margin */
-    margin-right: 40px;  
-    /* Adjust the desired width */
-    width: 500px; 
+    margin: 30px;
 }
 
 .description {
