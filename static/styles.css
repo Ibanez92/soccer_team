@@ -6,8 +6,7 @@ body {
 
 header {
     background-color: #2752fb;
-    color: #fff;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -70,15 +69,16 @@ nav ul li a {
     text-align: center;
 }
 
-
 .calendar-container {
-    flex-basis: 65%;
-    margin-bottom: 25px;
-    margin-left: 10px;
+    flex-basis: 63%;
+    margin-bottom: 30px;
+    margin-left: 20px; /* Add margin space to the left side */
+    margin-right: 20px; /* Add margin space to the right side */
+    
 }
 
 .contact-form {
-    flex-basis: 34%;  
+    flex-basis: 31%;
     margin-bottom: 25px;
 }
 
@@ -87,7 +87,7 @@ nav ul li a {
 }
 
 .form-element {
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -161,14 +161,26 @@ footer {
   }
 
 @media screen and (max-width: 768px) {
-    .calendar-container {
-        flex-direction: column;
-    }
-
+    .team-info,
+    .description,
     .calendar-container,
     .contact-form {
-        flex-basis: 100%;
+        margin: 10px;
     }
+
+    .group-image {
+        margin-top: 10px;
+    }
+    /* .calendar-container {
+        flex-direction: column;
+    }
+*/
+    .calendar-container {
+        flex-basis: 100%;
+    } 
+    .contact-form {
+        flex-basis: 90%;
+    } 
 }
   
 @media screen and (max-width: 480px) {
@@ -176,12 +188,8 @@ footer {
       flex-direction: column;
       align-items: center; /* Center items vertically */
     }
-  }
-
- /* Responsive styling for smaller screens */
-@media screen and (max-width: 480px) {
     .form-element {
-      max-width: 100%;
+        max-width: 100%;
     }
     .body {
         max-width: 100%;
