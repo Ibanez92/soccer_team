@@ -21,19 +21,20 @@
         </nav>
         <main>
             <div class="content">
-                <div>
+                <div class="team-info">
                     <img class="group-image" src="{{ url_for('static', filename='images/spartan_teamv3.png') }}" alt="Group Image">
                 </div>
-                
+
                 <div class="team-info">
-                    
-                    <div class="description">
+
+                    <div
+                        class="description">
                         <!-- Description content -->
                         <h2>Welcome to the U8 Spartan's website!</h2>
 
                         <p>Join us on our exciting soccer journey as we showcase the talent and growth of our Spartans. Your unwavering support creates a positive atmosphere for our players to thrive. Come cheer for our talented boys and girls as they demonstrate their skills and determination throughout the season.</p>
 
-                        <p>informed and engaged by visiting our team website regularly for the latest schedule of practices, games, and events. We will provide details on practice times, game locations, and any additional activities.</p>
+                        <p>Stay informed and engaged by visiting our team website regularly for the latest schedule of practices, games, and events. We will provide details on practice times, game locations, and any additional activities.</p>
 
                         <p>Together, let's create lasting memories and inspire a lifelong passion for soccer in our young athletes. Thank you for being an integral part of our team. If you have any questions or need further information, please feel free to contact me directly. I'm here to support and assist you in any way I can.</p>
 
@@ -45,7 +46,8 @@
 
             <div class="content">
                 <div class="calendar-container">
-                    <table class="calendar">
+                    <table
+                        class="calendar">
                         <!-- Calendar table content -->
                         <caption>Upcoming Events</caption>
                         <tbody>
@@ -106,7 +108,8 @@
 
                 <div class="contact-form">
                     <h3>Contact Me</h3>
-                    <form class="form-element" method="POST" action="{{ url_for('submit_contact_form') }}">
+                    <form
+                        class="form-element" method="POST" action="{{ url_for('submit_contact_form') }}">
                         <!-- Contact form content -->
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
@@ -119,6 +122,7 @@
 
                         <button type="submit">Submit</button>
                     </form>
+
                 </div>
             </div>
         </main>

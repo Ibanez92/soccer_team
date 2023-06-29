@@ -53,69 +53,43 @@ nav ul li a {
     align-items: center;
     margin-right: 20px;
     margin-left: 20px;
+    margin-bottom: 40px;
 }
 
 .group-image {
-    width: 460px;
+    margin-top: 20px;
+    max-width: 100%; /* Set the maximum width to 100% of its container */
+    height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
     border-radius: 10px;
-    margin: 30px;
 }
 
 .description {
     margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-align: center;
 }
 
-/* .calendar-contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    gap: 20px;
-} */
 
 .calendar-container {
-    flex-basis: 70%;
-}
-
-.contact-form {
-    flex-basis: 30%;
-}
-
-
-
-
-/* main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-/* .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-} */
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    min-height: 100%;
-    text-align: center;
+    flex-basis: 65%;
     margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+.contact-form {
+    flex-basis: 34%;  
+    margin-bottom: 25px;
+}
+
+.contact-form h3{
+    text-align: center;
 }
 
 .form-element {
     max-width: 400px;
     margin: 0 auto;
   }
-
-/* .description {
-    margin-top: 10px; Adjust the desired margin
-    margin-right: 60px;
-    margin-left: 40px;
-} */
 
 /* Label styling */
 label {
@@ -136,6 +110,8 @@ input,
   
   /* Submit button styling */
 button[type="submit"] {
+    display: block;
+    margin: 0 auto; /* Centers the button horizontally */
     background-color: #4caf50;
     color: white;
     padding: 10px 20px;
@@ -143,22 +119,15 @@ button[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-  }
+}
   
 button[type="submit"]:hover {
     background-color: #45a049;
-  }
+}
   
 button[type="submit"]:focus {
     outline: none;
-  }
-
-/* .group-image {
-    margin-right: 40 px;
-    margin-right: 40px; Adjust the desired margin
-    width: 500px; Adjust the desired width
-    border-radius: 10px;
-} */
+}
 
 footer {
     background-color: #2752fb;
@@ -166,46 +135,33 @@ footer {
     padding: 10px;
     text-align: center;
 }
-
-/* .calendar-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-
-  } */
   
-  .calendar {
+.calendar {
     border-collapse: collapse;
     width: 100%;
   }
   
-  .calendar caption {
+.calendar caption {
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
     text-align: center;
   }
   
-  .calendar tbody tr:nth-child(even) {
+.calendar tbody tr:nth-child(even) {
     background-color: #f2f2f2;
   }
   
-  .calendar td {
+.calendar td {
     padding: 10px;
   }
   
-  .calendar td.date {
+.calendar td.date {
     font-weight: bold;
   }
-  
-  /* .contact-form {
-    width: 100%;
-    margin-top: 20px;
-  } */
 
-  @media screen and (max-width: 768px) {
-    .calendar-contact-container {
+@media screen and (max-width: 768px) {
+    .calendar-container {
         flex-direction: column;
     }
 
@@ -215,7 +171,7 @@ footer {
     }
 }
   
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .calendar-container {
       flex-direction: column;
       align-items: center; /* Center items vertically */
@@ -223,7 +179,7 @@ footer {
   }
 
  /* Responsive styling for smaller screens */
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .form-element {
       max-width: 100%;
     }
