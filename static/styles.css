@@ -74,14 +74,14 @@ nav ul li a {
 }
 
 .title {
-    font-size: 61px;
+    font-size: 62px;
     text-align: center;
     animation: bounce 3s ease-in-out infinite;
+    color: #2752fb;
 }
 
 .description {
-    margin-top: 10px;
-    margin-right: 25px;
+    max-width: 90%; /* Set the maximum width to 100% of its container */
     text-align: center;
 }
 
