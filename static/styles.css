@@ -155,26 +155,26 @@ footer {
 .calendar {
     border-collapse: collapse;
     width: 100%;
-  }
+}
   
 .calendar caption {
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
     text-align: center;
-  }
+}
   
 .calendar tbody tr:nth-child(even) {
     background-color: #f2f2f2;
-  }
+}
   
 .calendar td {
     padding: 10px;
-  }
+}
   
 .calendar td.date {
     font-weight: bold;
-  }
+}
 
 @media screen and (max-width: 768px) {
     .team-info,
