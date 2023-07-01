@@ -6,7 +6,7 @@ body {
 
 header {
     background-color: #2752fb;
-    padding: 15px;
+    padding: 12px;
     text-align: center;
 }
 
@@ -57,10 +57,46 @@ nav ul li a {
 
 .group-image {
     margin-top: 30px;
-    max-width: 80%; /* Set the maximum width to 100% of its container */
+    max-width: 75%; /* Set the maximum width to 100% of its container */
     height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
     border-radius: 10px;
 }
+.div-team-info2 {
+     flex-basis: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     margin-bottom: 40px;
+}
+
+.team-info2 {
+    max-width: 80%; /* Set the maximum width to 100% of its container */
+    height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.main-team-logo {
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.spartan-logo-image {
+    max-width: 60%; /* Set the maximum width to 100% of its container */
+    height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -76,7 +112,7 @@ nav ul li a {
 .title {
     font-size: 62px;
     text-align: center;
-    animation: bounce 3s ease-in-out infinite;
+    animation: bounce 2.5s ease-in-out infinite;
     color: #2752fb;
 }
 
@@ -86,16 +122,14 @@ nav ul li a {
 }
 
 .calendar-container {
-    flex-basis: 63%;
-    margin-bottom: 30px;
-    margin-left: 20px; /* Add margin space to the left side */
-    margin-right: 20px; /* Add margin space to the right side */
+    flex-basis: 55%;
+    margin-bottom: 30px;  
     
 }
 
 .contact-form {
-    flex-basis: 31%;
-    margin-bottom: 25px;
+    flex-basis: 50%;
+    margin-top: 90px;
 }
 
 .contact-form h3{
@@ -103,7 +137,7 @@ nav ul li a {
 }
 
 .form-element {
-    max-width: 100%;
+    max-width: 60%;
     margin: 0 auto;
   }
 
@@ -155,6 +189,7 @@ footer {
 .calendar {
     border-collapse: collapse;
     width: 100%;
+    
 }
   
 .calendar caption {
@@ -162,6 +197,7 @@ footer {
     font-weight: bold;
     padding: 10px;
     text-align: center;
+    margin-bottom: 32px;
 }
   
 .calendar tbody tr:nth-child(even) {
