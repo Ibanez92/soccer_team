@@ -1,13 +1,22 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.771)
+
 }
 
 header {
     background-color: #2752fb;
     padding: 12px;
     text-align: center;
+    max-width: 100%;
+    height: auto;
 }
 
 header .spartan-icon {
@@ -44,6 +53,8 @@ nav ul li a {
 .content {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 40px;
 }
 
 .team-info {
@@ -52,12 +63,10 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 40px;
 }
 
 .group-image {
-    margin-top: 30px;
-    max-width: 75%; /* Set the maximum width to 100% of its container */
+    max-width: 80%; /* Set the maximum width to 100% of its container */
     height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
     border-radius: 10px;
 }
@@ -121,6 +130,14 @@ nav ul li a {
     text-align: center;
 }
 
+.description h2{
+    padding: 20px 0px 20px 0px;
+}
+
+.description p{
+    padding: 6px 0px 6px 0px;
+}
+
 .calendar-container {
     flex-basis: 55%;
     margin-bottom: 30px;  
@@ -129,7 +146,7 @@ nav ul li a {
 
 .contact-form {
     flex-basis: 50%;
-    margin-top: 90px;
+    margin-top: 80px;
 }
 
 .contact-form h3{
@@ -178,13 +195,6 @@ button[type="submit"]:hover {
 button[type="submit"]:focus {
     outline: none;
 }
-
-footer {
-    background-color: #2752fb;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
   
 .calendar {
     border-collapse: collapse;
@@ -197,7 +207,7 @@ footer {
     font-weight: bold;
     padding: 10px;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
   
 .calendar tbody tr:nth-child(even) {
@@ -212,7 +222,14 @@ footer {
     font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+footer {
+    background-color: #2752fb;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* @media screen and (max-width: 768px) {
     .team-info,
     .description,
     .calendar-container,
@@ -223,10 +240,7 @@ footer {
     .group-image {
         margin-top: 10px;
     }
-    /* .calendar-container {
-        flex-direction: column;
-    }
-*/
+    
     .calendar-container {
         flex-basis: 100%;
     } 
@@ -238,12 +252,48 @@ footer {
 @media screen and (max-width: 480px) {
     .calendar-container {
       flex-direction: column;
-      align-items: center; /* Center items vertically */
+      align-items: center; Center items vertically
     }
     .form-element {
         max-width: 100%;
     }
     .body {
         max-width: 100%;
+    }
+  } */
+
+  @media screen and (max-width: 768px) {
+    .team-info,
+    .div-team-info2,
+    .main-team-logo,
+    .contact-form {
+      flex-basis: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .team-info,
+    .div-team-info2,
+    .description,
+    .calendar-container,
+    .contact-form,
+    .content {
+      margin: 10px;
+    }
+  
+    .group-image {
+      margin-top: 10px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .calendar-container {
+        flex-basis: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .form-element {
+      max-width: 100%;
     }
   }
