@@ -66,10 +66,39 @@ nav ul li a {
 }
 
 .group-image {
+    
     max-width: 80%; /* Set the maximum width to 100% of its container */
     height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
     border-radius: 10px;
 }
+
+.title {
+    font-size: 80px;
+    text-align: center;
+    animation: bounce 2.5s ease-in-out infinite;
+    color: #2752fb;
+    padding-bottom: 30px;
+}
+
+.description {
+    flex-basis: 50%;
+    max-width: 100%; /* Set the maximum width to 100% of its container */
+    height:auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.description h2{
+    padding: 20px 0px 20px 0px;
+}
+
+.description p{
+    padding: 6px 0px 6px 0px;
+}
+
 .div-team-info2 {
      flex-basis: 50%;
      display: flex;
@@ -116,26 +145,6 @@ nav ul li a {
     60% {
         transform: translateY(-10px);
     }
-}
-
-.title {
-    font-size: 62px;
-    text-align: center;
-    animation: bounce 2.5s ease-in-out infinite;
-    color: #2752fb;
-}
-
-.description {
-    max-width: 90%; /* Set the maximum width to 100% of its container */
-    text-align: center;
-}
-
-.description h2{
-    padding: 20px 0px 20px 0px;
-}
-
-.description p{
-    padding: 6px 0px 6px 0px;
 }
 
 .calendar-container {
@@ -233,6 +242,7 @@ footer {
     .team-info,
     .div-team-info2,
     .main-team-logo,
+    .description,
     .contact-form {
       flex-basis: 100%;
     }
