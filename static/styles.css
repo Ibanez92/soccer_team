@@ -19,8 +19,17 @@ header {
     height: auto;
 }
 
+header .spartan-icon,
+.group-image,
+.team-info2,
+.spartan-logo-image {
+  max-width: 100%;
+  height: auto;
+}
+
 header .spartan-icon {
-    width: 150px;  /* Adjust the desired width */
+    /* Adjust the desired width */
+    /* width: 150px;   */
     height: auto; /* Automatically adjust height while maintaining the aspect ratio */
 }
 
@@ -66,8 +75,8 @@ nav ul li a {
 }
 
 .group-image {
-    
-    max-width: 80%; /* Set the maximum width to 100% of its container */
+    /* Set the maximum width to 100% of its container */
+    /* max-width: 80%;  */
     height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
     border-radius: 10px;
 }
@@ -109,7 +118,8 @@ nav ul li a {
 }
 
 .team-info2 {
-    max-width: 80%; /* Set the maximum width to 100% of its container */
+    /* Set the maximum width to 100% of its container */
+    /* max-width: 80%;  */
     height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
     display: flex;
     align-items: center;
@@ -128,7 +138,8 @@ nav ul li a {
 }
 
 .spartan-logo-image {
-    max-width: 60%; /* Set the maximum width to 100% of its container */
+    /* Set the maximum width to 100% of its container */
+    /* max-width: 60%;  */
     height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
     align-items: center;
     justify-content: center;
@@ -238,11 +249,12 @@ footer {
     text-align: center;
 }
 
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .description,
+    .calendar-container,
     .team-info,
     .div-team-info2,
     .main-team-logo,
-    .description,
     .contact-form {
       flex-basis: 100%;
     }
@@ -255,17 +267,28 @@ footer {
     .calendar-container,
     .contact-form,
     .content {
-      margin: 16px;
+      margin: 15px;
     }
   
+    .group-image {
+      margin-top: 10px;
+    }
   }
+
   @media screen and (max-width: 768px) {
     .calendar-container {
-      flex-basis: 100%;
       flex-direction: column;
       align-items: center;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .title {
+      font-size: 48px;
+      padding-bottom: 10px;
+    }
+  }
+  
   @media screen and (max-width: 480px) {
     .form-element {
       max-width: 100%;
