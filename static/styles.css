@@ -21,9 +21,8 @@ header {
 
 header .spartan-icon,
 .group-image,
-.team-info2,
-.spartan-logo-image {
-  max-width: 80%;
+.team-info2 {
+  max-width: 86%;
   height: auto;
 }
 
@@ -98,6 +97,8 @@ nav ul li a {
     justify-content: center;
     flex-direction: column;
     padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .description h2{
@@ -139,7 +140,7 @@ nav ul li a {
 
 .spartan-logo-image {
     /* Set the maximum width to 100% of its container */
-    /* max-width: 60%;  */
+    max-width: 60%; 
     height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
     align-items: center;
     justify-content: center;
