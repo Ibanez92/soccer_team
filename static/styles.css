@@ -22,7 +22,7 @@ header {
 header .spartan-icon,
 .group-image,
 .team-info2 {
-  max-width: 86%;
+  max-width: 90%;
   height: auto;
 }
 
@@ -97,8 +97,8 @@ nav ul li a {
     justify-content: center;
     flex-direction: column;
     padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .description h2{
