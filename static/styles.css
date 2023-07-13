@@ -3,12 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 body {
     font-family: Arial, sans-serif;
     background-color: rgba(255, 255, 255, 0.771)
-
 }
 
 header {
@@ -19,17 +18,17 @@ header {
     height: auto;
 }
 
-header .spartan-icon,
 .group-image,
 .team-info2 {
-  max-width: 90%;
-  height: auto;
+    max-width: 90%;
+    height: auto;
 }
 
 header .spartan-icon {
     /* Adjust the desired width */
-    /* width: 150px;   */
-    height: auto; /* Automatically adjust height while maintaining the aspect ratio */
+    width: 150px;  
+    height: auto;
+    /* Automatically adjust height while maintaining the aspect ratio */
 }
 
 nav {
@@ -76,7 +75,8 @@ nav ul li a {
 .group-image {
     /* Set the maximum width to 100% of its container */
     /* max-width: 80%;  */
-    height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
+    height: auto;
+    /* Automatically adjust the height while maintaining the aspect ratio */
     border-radius: 10px;
 }
 
@@ -90,8 +90,9 @@ nav ul li a {
 
 .description {
     flex-basis: 50%;
-    max-width: 100%; /* Set the maximum width to 100% of its container */
-    height:auto;
+    max-width: 100%;
+    /* Set the maximum width to 100% of its container */
+    height: auto;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -101,27 +102,28 @@ nav ul li a {
     padding-right: 10px;
 }
 
-.description h2{
+.description h2 {
     padding: 20px 0px 20px 0px;
 }
 
-.description p{
+.description p {
     padding: 6px 0px 6px 0px;
 }
 
 .div-team-info2 {
-     flex-basis: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     margin-bottom: 40px;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
 }
 
 .team-info2 {
     /* Set the maximum width to 100% of its container */
     /* max-width: 80%;  */
-    height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
+    height: auto;
+    /* Automatically adjust the height while maintaining the aspect ratio */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,20 +142,28 @@ nav ul li a {
 
 .spartan-logo-image {
     /* Set the maximum width to 100% of its container */
-    max-width: 60%; 
-    height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
+    max-width: 60%;
+    height: auto;
+    /* Automatically adjust the height while maintaining the aspect ratio */
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(-20px);
     }
+
     60% {
         transform: translateY(-10px);
     }
@@ -161,8 +171,8 @@ nav ul li a {
 
 .calendar-container {
     flex-basis: 55%;
-    margin-bottom: 30px;  
-    
+    margin-bottom: 30px;
+
 }
 
 .contact-form {
@@ -170,36 +180,37 @@ nav ul li a {
     margin-top: 80px;
 }
 
-.contact-form h3{
+.contact-form h3 {
     text-align: center;
 }
 
 .form-element {
     max-width: 60%;
     margin: 0 auto;
-  }
+}
 
 /* Label styling */
 label {
     display: block;
     margin-bottom: 8px;
-  }
-  
-  /* Input field styling */
+}
+
+/* Input field styling */
 input,
-  textarea {
+textarea {
     width: 100%;
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #ccc;
     font-size: 14px;
     margin-bottom: 16px;
-  }
-  
-  /* Submit button styling */
+}
+
+/* Submit button styling */
 button[type="submit"] {
     display: block;
-    margin: 0 auto; /* Centers the button horizontally */
+    margin: 0 auto;
+    /* Centers the button horizontally */
     background-color: #4caf50;
     color: white;
     padding: 10px 20px;
@@ -208,21 +219,21 @@ button[type="submit"] {
     cursor: pointer;
     font-size: 16px;
 }
-  
+
 button[type="submit"]:hover {
     background-color: #45a049;
 }
-  
+
 button[type="submit"]:focus {
     outline: none;
 }
-  
+
 .calendar {
     border-collapse: collapse;
     width: 100%;
-    
+
 }
-  
+
 .calendar caption {
     font-size: 18px;
     font-weight: bold;
@@ -230,15 +241,15 @@ button[type="submit"]:focus {
     text-align: center;
     margin-bottom: 20px;
 }
-  
+
 .calendar tbody tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-  
+
 .calendar td {
     padding: 10px;
 }
-  
+
 .calendar td.date {
     font-weight: bold;
 }
@@ -251,51 +262,57 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
     .description,
     .calendar-container,
     .team-info,
     .div-team-info2,
     .main-team-logo,
     .contact-form {
-      flex-basis: 100%;
+        flex-basis: 100%;
     }
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
     .team-info,
     .div-team-info2,
     .description,
     .calendar-container,
     .contact-form,
     .content {
-      margin: 10px;
+        margin: 10px;
     }
-  
+
     .group-image {
-      margin-top: 10px;
+        margin-top: 10px;
     }
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .calendar-container {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-    nav ul {
-    display: flex;
-    justify-content: center;
-  }
-  }
 
-  @media screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .title {
-      font-size: 48px;
-      padding-bottom: 10px;
+        font-size: 48px;
+        padding-bottom: 10px;
     }
-  }
-  
-  @media screen and (max-width: 480px) {
+    header .spartan-icon{
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .form-element {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
+}
