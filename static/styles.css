@@ -26,7 +26,7 @@ header {
 
 header .spartan-icon {
     /* Adjust the desired width */
-    width: 150px;  
+    width: 160px;  
     height: auto;
     /* Automatically adjust height while maintaining the aspect ratio */
 }
@@ -307,7 +307,7 @@ footer {
         padding-bottom: 10px;
     }
     header .spartan-icon{
-        width: 110px;
+        max-width: 140px;
     }
 }
 

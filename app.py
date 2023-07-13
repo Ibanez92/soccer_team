@@ -13,11 +13,11 @@ def players():
 def home():
     return render_template('index.html')
 
-@app.route('/', methods=['GET'])
+@app.route('/contact', methods=['GET'])
 def contact():
     return render_template('index.html')
 
-@app.route('/', methods=['POST'])
+@app.route('/submit', methods=['POST'])
 def submit_contact_form():
     name = request.form.get('name')
     email = request.form.get('email')
