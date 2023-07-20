@@ -31,19 +31,7 @@ data = sheet.get_all_values()
 # Create a DataFrame using the fetched data
 df = pd.DataFrame(data[1:], columns=data[0])
 
-# Process the DataFrame to generate player cards dynamically
-for _, row in df.iterrows():
-    player_name = row['Name']
-    goals = row['Goals']
-    shots = row['Shots']
-    assists = row['Assists']
-    matches_played = row['Matches Played']
-
-    # Generate player card dynamically using the retrieved data
-    # Your code here to generate and display player cards
-
-# Rest of your Flask application code
-
+# Define a route to render the players page
 @app.route("/players")
 def players():
     # Convert DataFrame to list of dictionaries
