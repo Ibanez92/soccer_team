@@ -1,9 +1,18 @@
 from flask import Flask, render_template, request
 import smtplib
 from email.message import EmailMessage
+import os
+from google.oauth2 import service_account
 
 app = Flask(__name__)
 
+# Path to your credential JSON file
+credential_file = os.path.join(os.getcwd(), 'credentials/your_service_account_key.json')
+
+# Load credentials from the JSON file
+credentials = service_account.Credentials.from_service_account_file(
+    credential_file, scopes=['https://www.googleapis.com/auth/spreadsheets.readonly']
+)
 
 @app.route("/players")
 def players():
