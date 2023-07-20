@@ -8,6 +8,14 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='players.css') }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* Add your CSS styles for player cards here */
+            .player-card {
+                border: 1px solid black;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -30,11 +38,20 @@
                     Here, you'll find a comprehensive overview of our talented soccer players and their impressive stats. Get ready to explore the achievements and contributions of each player as we dive into their goals, shots, assists, and matches played.</p>
             </div>
         </div>
-        
-        </div>
-        <footer>
-            <p>&copy; 2023 U8 Spartan Soccer</p>
-        </footer>
+        <h1>Player Cards</h1>
+        {% for player in players %}
+            <div class="player-card">
+                <h3>{{ player['Name'] }}</h3>
+                <p>Goals:
+                    {{ player['Goals'] }}</p>
+                <p>Shots:
+                    {{ player['Shots'] }}</p>
+                <p>Assists:
+                    {{ player['Assists'] }}</p>
+                <p>Matches Played:
+                    {{ player['Matches Played'] }}</p>
+            </div>
+        {% endfor %}
     </body>
-
-</html>
+</html></div><footer>
+<p>&copy; 2023 U8 Spartan Soccer</p></footer></body></html>

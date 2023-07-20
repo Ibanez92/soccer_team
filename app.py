@@ -9,18 +9,17 @@ import pandas as pd
 app = Flask(__name__)
 
 # Path to your credential JSON file
-credential_file = os.path.join(os.getcwd(), 'credentials/credentials/spartan-soccer-0861efb1932a.json')
+credential_file = os.path.join(os.getcwd(), 'credentials/spartan-soccer-2db8e2aa941f.json')
 
 # Load credentials from the JSON file
 credentials = service_account.Credentials.from_service_account_file(
-    credential_file, scopes=['https://www.googleapis.com/auth/spreadsheets.readonly']
+    credential_file, scopes=['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 )
-
 # Create a client to interact with Google Sheets API
 client = gspread.authorize(credentials)
 
 # Open the Google Spreadsheet
-spreadsheet = client.open('Spartan stats')  # Replace with your actual spreadsheet name
+spreadsheet = client.open('Spartanstats')  
 
 # Select the specific sheet within the spreadsheet
 sheet = spreadsheet.sheet1  # Assuming the data is on the first sheet
