@@ -46,8 +46,11 @@ for _, row in df.iterrows():
 
 @app.route("/players")
 def players():
-    return render_template("players.html")
+    # Convert DataFrame to list of dictionaries
+    player_data = df.to_dict(orient='records')
 
+    # Render the players.html template and pass the player data
+    return render_template("players.html", players=player_data)
 
 @app.route("/")
 def home():
