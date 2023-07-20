@@ -20,20 +20,20 @@ credentials = service_account.Credentials.from_service_account_file(
 client = gspread.authorize(credentials)
 
 # Open the Google Spreadsheet
-spreadsheet = client.open('Your Spreadsheet Name')
+spreadsheet = client.open('Spartan stats')  # Replace with your actual spreadsheet name
 
 # Select the specific sheet within the spreadsheet
-sheet = spreadsheet.worksheet('Sheet1')  # Replace 'Sheet1' with your actual sheet name
+sheet = spreadsheet.sheet1  # Assuming the data is on the first sheet
 
-# Read the data from the sheet into a pandas DataFrame
+# Fetch all the values from the sheet
 data = sheet.get_all_values()
-headers = data[0]
-rows = data[1:]
-df = pd.DataFrame(rows, columns=headers)
+
+# Create a DataFrame using the fetched data
+df = pd.DataFrame(data[1:], columns=data[0])
 
 # Process the DataFrame to generate player cards dynamically
-for index, row in df.iterrows():
-    player_name = row['Player Name']
+for _, row in df.iterrows():
+    player_name = row['Name']
     goals = row['Goals']
     shots = row['Shots']
     assists = row['Assists']
@@ -46,40 +46,7 @@ for index, row in df.iterrows():
 
 @app.route("/players")
 def players():
-    # Read the CSV file using pandas
-    df = pd.read_csv("data/players.csv")
-
-    # Generate player cards
-    player_cards = []
-    for _, row in df.iterrows():
-        name = row["Name"]
-        goals = row["Goals"]
-        # Extract other relevant columns
-
-        # Generate player card HTML
-        player_card_html = f"""
-        <div class="card-container">
-            <div class="player-card">
-                <img src="player-image.jpg" alt="Player Image" class="player-image">
-                <div class="player-info">
-                    <h3 class="player-name">Player Name</h3>
-                    <p class="player-stats">Goals:
-                        <span class="goal-count">10</span>
-                    </p>
-                    <p class="player-stats">Shots:
-                        <span class="shot-count">20</span>
-                    </p>
-                    <p class="player-stats">Assists:
-                        <span class="assist-count">5</span>
-                    </p>
-                    <p class="player-stats">Matches Played:
-                        <span class="matches-played">15</span>
-                    </p>
-                </div>
-            </div>
-        """
-        player_cards.append(player_card_html)
-    return render_template("players.html", player_cards=player_cards)
+    return render_template("players.html")
 
 
 @app.route("/")
