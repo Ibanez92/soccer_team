@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spartan Players</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spartan Players</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='players.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <img class="spartan-icon" src="{{ url_for('static', filename='images/spartan_logo.png') }}" alt="Custom Icon">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="/players"><i class="fas fa-users"></i>Players</a></li>
+                <li><a href="/schedule"><i class="fas fa-calendar"></i>Schedule</a></li>
+            </ul>
+        </nav>
+        <div class="page-container">
+            <div
+                class="description">
+                <!-- Description content -->
+                <h3>Welcome to the Players Page!</h3>
+
+                <p>
+                    Here, you'll find a comprehensive overview of our talented soccer players and their impressive stats. Get ready to explore the achievements and contributions of each player as we dive into their goals, shots, assists, and matches played.</p>
+            </div>
+        </div>
+        
+        </div>
+        <footer>
+            <p>&copy; 2023 U8 Spartan Soccer</p>
+        </footer>
+    </body>
+
 </html>

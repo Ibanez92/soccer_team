@@ -1,0 +1,151 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.771)
+}
+
+header {
+    background-color: #2752fb;
+    padding: 12px;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+
+header .spartan-icon {
+    /* Adjust the desired width */
+    width: 160px;
+    height: auto;
+    /* Automatically adjust height while maintaining the aspect ratio */
+}
+
+nav {
+    background-color: #F8E019;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #3a3939;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+
+.description {
+    max-width: 600px;
+    /* Adjust as needed */
+    text-align: center;
+}
+
+.description h2 {
+    padding: 20px 0px 20px 0px;
+}
+
+.description p {
+    padding: 6px 0px 6px 0px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Adjust alignment as needed */
+}
+
+.player-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 10px;
+}
+
+.player-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.player-info {
+    text-align: center;
+}
+
+.player-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.player-stats {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.goal-count,
+.shot-count,
+.assist-count,
+.matches-played {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #2752fb;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 48px;
+        padding-bottom: 10px;
+    }
+
+    header .spartan-icon {
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .player-card {
+        max-width: 300px;
+        /* Adjust as needed */
+        /* Other styles */
+    }
+}
