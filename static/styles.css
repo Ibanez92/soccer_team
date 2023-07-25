@@ -19,7 +19,7 @@ header {
 }
 
 .group-image,
-.team-info2 {
+.team-pic2 {
     max-width: 90%;
     height: auto;
 }
@@ -61,8 +61,9 @@ nav ul li a {
 .content {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
-    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .team-info {
@@ -114,7 +115,7 @@ nav ul li a {
     font-family: "Roboto", Arial, sans-serif;
 }
 
-.div-team-info2 {
+.team-pic-container2 {
     flex-basis: 50%;
     display: flex;
     align-items: center;
@@ -123,7 +124,7 @@ nav ul li a {
     margin-bottom: 40px;
 }
 
-.team-info2 {
+.team-pic2 {
     /* Set the maximum width to 100% of its container */
     /* max-width: 80%;  */
     height: auto;
@@ -173,51 +174,54 @@ nav ul li a {
     }
 }
 
-.calendar-container {
-    flex-basis: 55%;
-    margin-bottom: 30px;
-
-}
-
 .contact-form {
-    flex-basis: 50%;
-    margin-top: 80px;
+    max-width: 500px; /* Adjust the width as needed */
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
 }
 
 .contact-form h3 {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2752fb;
 }
 
 .form-element {
-    max-width: 60%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Label styling */
 label {
-    display: block;
+    font-weight: bold;
     margin-bottom: 8px;
+    color: #3a3939;
 }
 
 /* Input field styling */
 input,
 textarea {
-    width: 100%;
-    padding: 8px;
-    border-radius: 4px;
+    padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 4px;
     font-size: 14px;
     margin-bottom: 16px;
 }
 
+textarea {
+    resize: vertical;
+}
+
 /* Submit button styling */
 button[type="submit"] {
-    display: block;
-    margin: 0 auto;
-    /* Centers the button horizontally */
     background-color: #4caf50;
     color: white;
-    padding: 10px 20px;
+    padding: 12px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -230,6 +234,12 @@ button[type="submit"]:hover {
 
 button[type="submit"]:focus {
     outline: none;
+}
+
+.calendar-container {
+    flex-basis: 55%;
+    margin-bottom: 30px;
+
 }
 
 .calendar {
@@ -270,7 +280,7 @@ footer {
     .description,
     .calendar-container,
     .team-info,
-    .div-team-info2,
+    .team-pic-container2,
     .main-team-logo,
     .contact-form {
         flex-basis: 100%;
@@ -280,7 +290,7 @@ footer {
 @media screen and (max-width: 768px) {
 
     .team-info,
-    .div-team-info2,
+    .team-pic-container2,
     .description,
     .calendar-container,
     .contact-form,
@@ -313,6 +323,10 @@ footer {
     header .spartan-icon{
         max-width: 140px;
     }
+    .contact-form {
+        max-width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
