@@ -47,12 +47,13 @@ nav ul li a {
 }
 
 .page-container {
-    padding: 20px;
+    padding: 15px;
 }
+
 .description {
     max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
+    margin: 30px auto;
+    padding: 20px;
     font-family: "Roboto", Arial, sans-serif;
 }
 
@@ -108,6 +109,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    
     .title {
         font-size: 48px;
         padding-bottom: 10px;
@@ -122,4 +128,5 @@ footer {
         width: 100%; /* Make player cards occupy the full width of the screen */
         margin: 10px 0; /* Add spacing between player cards */
     }
+
 }
