@@ -30,20 +30,21 @@
                     Here, you'll find a comprehensive overview of our talented soccer players and their impressive stats. Get ready to explore the achievements and contributions of each player as we dive into their goals, shots, assists, and matches played.</p>
             </div>
         </div>
-        <h1>Player Cards</h1>
-        {% for player in players %}
-            <div class="player-card">
-                <h3>{{ player['Name'] }}</h3>
-                <p>Goals:
-                    {{ player['Goals'] }}</p>
-                <p>Shots:
-                    {{ player['Shots'] }}</p>
-                <p>Assists:
-                    {{ player['Assists'] }}</p>
-                <p>Matches Played:
-                    {{ player['Matches Played'] }}</p>
-            </div>
-        {% endfor %}
+        <div class="player-cards-container">
+            {% for player in players %}
+                <div class="player-card">
+                    <h3>{{ player['Name'] }}</h3>
+                    <p>Goals:
+                        {{ player['Goals'] }}</p>
+                    <p>Shots:
+                        {{ player['Shots'] }}</p>
+                    <p>Assists:
+                        {{ player['Assists'] }}</p>
+                    <p>Matches Played:
+                        {{ player['Matches Played'] }}</p>
+                </div>
+            {% endfor %}
+        </div>
     </body>
 </html></div><footer>
 <p>&copy; 2023 U8 Spartan Soccer</p></footer></body></html>
