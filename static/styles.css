@@ -50,7 +50,8 @@ nav ul li a {
     color: #3a3939;
     padding: 10px;
     text-decoration: none;
-    font-weight: bold
+    font-weight: bold;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 .main {
@@ -100,14 +101,17 @@ nav ul li a {
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 .description h2 {
     padding: 20px 0px 20px 0px;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 .description p {
     padding: 6px 0px 6px 0px;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 .div-team-info2 {
