@@ -8,6 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: rgba(255, 255, 255, 0.771);
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 header {
@@ -48,15 +49,26 @@ nav ul li a {
 .page-container {
     padding: 20px;
 }
-
 .description {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 .description h3 {
-    padding: 20px 0;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2752fb;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.description p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 .player-cards-container {
@@ -93,4 +105,21 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 48px;
+        padding-bottom: 10px;
+    }
+
+    header .spartan-icon {
+        max-width: 140px;
+    }
+
+    /* Adjust the layout of the player cards for smaller screens */
+    .player-card {
+        width: 100%; /* Make player cards occupy the full width of the screen */
+        margin: 10px 0; /* Add spacing between player cards */
+    }
 }
