@@ -18,15 +18,9 @@ header {
     height: auto;
 }
 
-.group-image,
-.team-pic2 {
-    max-width: 90%;
-    height: auto;
-}
-
 header .spartan-icon {
     /* Adjust the desired width */
-    width: 160px;  
+    width: 160px;
     height: auto;
     /* Automatically adjust height while maintaining the aspect ratio */
 }
@@ -50,8 +44,7 @@ nav ul li a {
     color: #3a3939;
     padding: 10px;
     text-decoration: none;
-    font-weight: bold;
-    font-family: "Roboto", Arial, sans-serif;
+    font-weight: bold
 }
 
 .main {
@@ -60,13 +53,14 @@ nav ul li a {
 
 .content {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
+    margin-bottom: 50px;
+    margin-top: 40px;
 }
 
-.team-info {
+.team-pic-container {
     flex-basis: 50%;
     display: flex;
     align-items: center;
@@ -74,20 +68,12 @@ nav ul li a {
     flex-direction: column;
 }
 
-.group-image {
+.team-pic {
     /* Set the maximum width to 100% of its container */
-    /* max-width: 80%;  */
+    max-width: 80%; 
     height: auto;
     /* Automatically adjust the height while maintaining the aspect ratio */
     border-radius: 10px;
-}
-
-.title {
-    font-size: 80px;
-    text-align: center;
-    animation: bounce 2.5s ease-in-out infinite;
-    color: #2752fb;
-    padding-bottom: 30px;
 }
 
 .description {
@@ -102,41 +88,56 @@ nav ul li a {
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    font-family: "Roboto", Arial, sans-serif;
+}
+
+.description-title {
+    font-size: 80px;
+    text-align: center;
+    animation: bounce 2.5s ease-in-out infinite;
+    color: #2752fb;
+    padding-bottom: 30px;
 }
 
 .description h2 {
     padding: 20px 0px 20px 0px;
-    font-family: "Roboto", Arial, sans-serif;
 }
 
 .description p {
     padding: 6px 0px 6px 0px;
-    font-family: "Roboto", Arial, sans-serif;
 }
 
-.team-pic-container2 {
-    flex-basis: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 40px;
+.calendar-container {
+    flex-basis: 55%;
+    margin-bottom: 30px;
+
 }
 
-.team-pic2 {
-    /* Set the maximum width to 100% of its container */
-    /* max-width: 80%;  */
-    height: auto;
-    /* Automatically adjust the height while maintaining the aspect ratio */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
+.calendar {
+    border-collapse: collapse;
+    width: 100%;
 }
 
-.main-team-logo {
+.calendar caption {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.calendar td {
+    padding: 10px;
+}
+
+.calendar td.date {
+    font-weight: bold;
+}
+
+.spartan-logo-container {
     flex-basis: 45%;
     display: flex;
     align-items: center;
@@ -174,9 +175,46 @@ nav ul li a {
     }
 }
 
+.team-pic-container2,
+.contact-container {
+    flex-basis: 50%;
+}
+
+.team-pic-container2 {
+    /* flex-basis: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.team-pic2 {
+    /* Set the maximum width to 100% of its container */
+    max-width: 80%; 
+    height: auto;
+    /* Automatically adjust the height while maintaining the aspect ratio */
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    border-radius: 10px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
 .contact-form {
-    max-width: 500px; /* Adjust the width as needed */
+    /* flex-basis: 50%; */
+    /* margin-top: 80px; */
+    max-width: 500px;
     width: 100%;
+    /* margin: 0 auto; */
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -192,6 +230,8 @@ nav ul li a {
 }
 
 .form-element {
+    /* max-width: 60%; */
+    /* margin: 0 auto; */
     display: flex;
     flex-direction: column;
 }
@@ -236,38 +276,6 @@ button[type="submit"]:focus {
     outline: none;
 }
 
-.calendar-container {
-    flex-basis: 55%;
-    margin-bottom: 30px;
-
-}
-
-.calendar {
-    border-collapse: collapse;
-    width: 100%;
-
-}
-
-.calendar caption {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.calendar tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.calendar td {
-    padding: 10px;
-}
-
-.calendar td.date {
-    font-weight: bold;
-}
-
 footer {
     background-color: #2752fb;
     color: #fff;
@@ -279,9 +287,9 @@ footer {
 
     .description,
     .calendar-container,
-    .team-info,
+    .team-pic-container,
     .team-pic-container2,
-    .main-team-logo,
+    .spartan-logo-container,
     .contact-form {
         flex-basis: 100%;
     }
@@ -289,7 +297,7 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    .team-info,
+    .team-pic-container,
     .team-pic-container2,
     .description,
     .calendar-container,
@@ -298,7 +306,7 @@ footer {
         margin: 10px;
     }
 
-    .group-image {
+    .team-pic {
         margin-top: 10px;
     }
 }
@@ -316,17 +324,16 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .title {
+    .description-title {
         font-size: 48px;
         padding-bottom: 10px;
     }
-    header .spartan-icon{
+    header .spartan-icon {
         max-width: 140px;
     }
     .contact-form {
         max-width: 100%;
     }
-
 }
 
 @media screen and (max-width: 480px) {
