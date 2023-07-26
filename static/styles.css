@@ -301,6 +301,11 @@ footer {
 /* Updated media query for iPad Air */
 @media only screen and (max-width: 1024px) {
 
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
     .team-pic-container,
     .description-container {
         flex-basis: 50%;
@@ -309,7 +314,7 @@ footer {
     .team-pic,
     .team-pic2,
     .description {
-        max-width: 90%;
+        max-width: 95%;
     }
 
     .description-title {
@@ -402,7 +407,7 @@ footer {
 
     .contact-form {
         max-width: 100%;
-        padding: 50px;
+        padding: 40px;
         /* Increase padding to make the form bigger */
     }
 
@@ -418,6 +423,41 @@ footer {
     }
 
     .calendar {
+        max-width: 100%;
+    }
+
+    .contact-container {
+        max-width: 100%;
+        width: 95%;
+    }
+
+    .contact-form {
+        font-size: 14px;
+        /* Adjust the font size for the entire form */
+
+        /* Adjust the max-width as per your preference */
+        max-width: 500px;
+        width: 95%;
+    }
+
+    /* Label styling */
+    label {
+        font-size: 12px;
+        /* Adjust the font size for labels */
+    }
+
+    input,
+    textarea {
+        font-size: 12px;
+        /* Adjust the font size for input fields and textarea */
+        width: 100%;
+        /* Set the input fields to take the full width of their container */
+        max-width: 100%;
+        /* Make sure the input fields don't exceed their container */
+    }
+
+    .team-pic,
+    .team-pic2 {
         max-width: 100%;
     }
 }
