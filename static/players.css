@@ -109,12 +109,22 @@ footer {
     text-align: center;
 }
 
+/* Updated media query for iPad Air */
+@media only screen and (max-width: 1024px) {
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     nav ul {
         display: flex;
         justify-content: center;
     }
-    
+
     .title {
         font-size: 48px;
         padding-bottom: 10px;
@@ -126,8 +136,22 @@ footer {
 
     /* Adjust the layout of the player cards for smaller screens */
     .player-card {
-        width: 100%; /* Make player cards occupy the full width of the screen */
-        margin: 10px 0; /* Add spacing between player cards */
+        width: 100%;
+        /* Make player cards occupy the full width of the screen */
+        margin: 10px 0;
+        /* Add spacing between player cards */
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    .description h3 {
+        font-size: 38px;
+        padding-bottom: 10px;
+
+    }
+
+    .description p {
+        font-size: 16px;
+    }
 }
