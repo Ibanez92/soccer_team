@@ -49,9 +49,12 @@ nav ul li a {
 
 .main {
     margin: 20px;
-    display: flex; /* Add display flex to center the content */
-    flex-direction: column; /* Stack the content in a column */
-    align-items: center; /* Center the content horizontally */
+    display: flex;
+    /* Add display flex to center the content */
+    flex-direction: column;
+    /* Stack the content in a column */
+    align-items: center;
+    /* Center the content horizontally */
 }
 
 .content {
@@ -72,11 +75,12 @@ nav ul li a {
 
 .team-pic {
     /* Set the maximum width to 100% of its container */
-    max-width: 80%; 
+    max-width: 80%;
     height: auto;
     /* Automatically adjust the height while maintaining the aspect ratio */
     border-radius: 10px;
 }
+
 .description-container {
     flex-basis: 50%;
     display: flex;
@@ -84,6 +88,7 @@ nav ul li a {
     justify-content: center;
     flex-direction: column;
 }
+
 .description {
     max-width: 80%;
     /* Set the maximum width to 100% of its container */
@@ -113,13 +118,15 @@ nav ul li a {
 
 .calendar {
     border-collapse: collapse;
-    max-width: 800px; /* Set a maximum width */
-    width: 90%; /* Ensure it takes the full width of the container */
+    max-width: 800px;
+    /* Set a maximum width */
+    width: 90%;
+    /* Ensure it takes the full width of the container */
     /* Add some padding to give it space from the left screen */
     /* padding: 0 10px; */
     /* Center the calendar within the container */
     margin: 0 auto;
-    
+
 }
 
 .calendar caption {
@@ -196,7 +203,7 @@ nav ul li a {
 
 .team-pic2 {
     /* Set the maximum width to 100% of its container */
-    max-width: 80%; 
+    max-width: 80%;
     height: auto;
     /* Automatically adjust the height while maintaining the aspect ratio */
     /* display: flex;
@@ -226,7 +233,7 @@ nav ul li a {
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
-    
+
 }
 
 .contact-form h3 {
@@ -291,7 +298,51 @@ footer {
     text-align: center;
 }
 
+/* Updated media query for iPad Air */
+@media only screen and (max-width: 1024px) {
+
+    .team-pic-container,
+    .description-container {
+        flex-basis: 50%;
+    }
+
+    .team-pic,
+    .team-pic2,
+    .description {
+        max-width: 90%;
+    }
+
+    .description-title {
+        font-size: 60px;
+    }
+
+    .contact-form {
+        max-width: 80%;
+        font-size: 14px;
+    }
+
+    /* Label styling */
+    label {
+        font-size: 12px;
+        /* Adjust the font size for labels */
+    }
+
+    /* Input field and textarea styling */
+    input,
+    textarea {
+        font-size: 12px;
+        /* Adjust the font size for input fields and textarea */
+    }
+
+    /* Submit button styling */
+    button[type="submit"] {
+        font-size: 16px;
+        /* Adjust the font size for the submit button */
+    }
+}
+
 @media screen and (max-width: 768px) {
+
     .description,
     .calendar-container,
     .team-pic-container,
@@ -299,9 +350,10 @@ footer {
     .spartan-logo-container,
     .contact-form,
     .contact-container,
-    .calendar{
+    .calendar {
         flex-basis: 100%;
     }
+
     .team-pic-container,
     .team-pic-container2,
     .description,
@@ -310,40 +362,51 @@ footer {
     .content {
         margin: 10px;
     }
+
     .team-pic {
         margin-top: 10px;
     }
+
     .content {
         flex-direction: column;
         align-items: center;
     }
+
     .team-pic2 {
         margin-bottom: 20px;
     }
+
     .calendar-container {
         flex-basis: 100%;
         width: 95%;
 
     }
+
     nav ul {
         display: flex;
         justify-content: center;
     }
+
     .description-title {
         font-size: 48px;
         padding-bottom: 10px;
     }
+
     header .spartan-icon {
         max-width: 140px;
     }
+
     .contact-container {
         flex-basis: 100%;
     }
+
     .contact-form {
         max-width: 100%;
-        padding: 30px; /* Increase padding to make the form bigger */
+        padding: 50px;
+        /* Increase padding to make the form bigger */
     }
-    .calendar{
+
+    .calendar {
         max-width: 100%;
         width: 100%;
     }
@@ -353,7 +416,8 @@ footer {
     .form-element {
         max-width: 100%;
     }
-    .calendar{
+
+    .calendar {
         max-width: 100%;
     }
 }
