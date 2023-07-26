@@ -53,8 +53,7 @@ nav ul li a {
 
 .content {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
     margin-top: 40px;
