@@ -112,6 +112,7 @@ nav ul li a {
 }
 
 .calendar-container {
+    padding-top: 30px;
     flex-basis: 50%;
     margin-bottom: 40px;
 }
@@ -135,7 +136,7 @@ nav ul li a {
     font-weight: bold;
     padding: 10px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .calendar tbody tr:nth-child(even) {
@@ -151,6 +152,7 @@ nav ul li a {
 }
 
 .spartan-logo-container {
+    padding-top: 30px;
     flex-basis: 50%;
     display: flex;
     align-items: center;
@@ -317,8 +319,11 @@ footer {
         max-width: 95%;
     }
 
+    
     .description-title {
-        font-size: 60px;
+        padding-top: 10px;
+        font-size: 47px;
+        padding-bottom: 10px;
     }
 
     .contact-form {
@@ -362,7 +367,6 @@ footer {
     .team-pic-container,
     .team-pic-container2,
     .description,
-    .calendar-container,
     .contact-form,
     .content {
         margin: 10px;
@@ -393,6 +397,7 @@ footer {
     }
 
     .description-title {
+        padding-top: 10px;
         font-size: 48px;
         padding-bottom: 10px;
     }
@@ -420,6 +425,11 @@ footer {
 @media screen and (max-width: 480px) {
     .form-element {
         max-width: 100%;
+    }
+    .description-title {
+        padding-top: 10px;
+        font-size: 36px;
+        padding-bottom: 10px;
     }
 
     .calendar {
