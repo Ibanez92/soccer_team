@@ -295,7 +295,7 @@ footer {
     .team-pic-container,
     .team-pic-container2,
     .spartan-logo-container,
-    .contact-form {
+    .contact-form,.contact-container {
         flex-basis: 100%;
     }
     .team-pic-container,
@@ -328,10 +328,6 @@ footer {
         font-size: 48px;
         padding-bottom: 10px;
     }
-    .team-pic-container2,
-    .contact-container {
-        flex-basis: 100%;
-    }
     header .spartan-icon {
         max-width: 140px;
     }
@@ -340,6 +336,7 @@ footer {
     }
     .contact-form {
         max-width: 100%;
+        padding: 30px; /* Increase padding to make the form bigger */
     }
 }
 
