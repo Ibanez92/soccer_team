@@ -49,6 +49,9 @@ nav ul li a {
 
 .main {
     margin: 20px;
+    display: flex; /* Add display flex to center the content */
+    flex-direction: column; /* Stack the content in a column */
+    align-items: center; /* Center the content horizontally */
 }
 
 .content {
@@ -56,7 +59,7 @@ nav ul li a {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .team-pic-container {
@@ -98,25 +101,25 @@ nav ul li a {
     font-family: "Roboto", Arial, sans-serif;
 }
 
-.description h2 {
-    padding: 20px 0px 20px 0px;
-    font-family: "Roboto", Arial, sans-serif;
-}
-
 .description p {
     padding: 6px 0px 6px 0px;
     font-family: "Roboto", Arial, sans-serif;
 }
 
 .calendar-container {
-    flex-basis: 55%;
-    margin-bottom: 30px;
-
+    flex-basis: 50%;
+    margin-bottom: 40px;
 }
 
 .calendar {
     border-collapse: collapse;
-    width: 100%;
+    max-width: 800px; /* Set a maximum width */
+    width: 90%; /* Ensure it takes the full width of the container */
+    /* Add some padding to give it space from the left screen */
+    /* padding: 0 10px; */
+    /* Center the calendar within the container */
+    margin: 0 auto;
+    
 }
 
 .calendar caption {
@@ -141,7 +144,7 @@ nav ul li a {
 }
 
 .spartan-logo-container {
-    flex-basis: 45%;
+    flex-basis: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,7 +297,9 @@ footer {
     .team-pic-container,
     .team-pic-container2,
     .spartan-logo-container,
-    .contact-form,.contact-container {
+    .contact-form,
+    .contact-container,
+    .calendar{
         flex-basis: 100%;
     }
     .team-pic-container,
@@ -316,8 +321,9 @@ footer {
         margin-bottom: 20px;
     }
     .calendar-container {
-        flex-direction: column;
-        align-items: center;
+        flex-basis: 100%;
+        width: 95%;
+
     }
     nav ul {
         display: flex;
@@ -337,10 +343,17 @@ footer {
         max-width: 100%;
         padding: 30px; /* Increase padding to make the form bigger */
     }
+    .calendar{
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .form-element {
+        max-width: 100%;
+    }
+    .calendar{
         max-width: 100%;
     }
 }
