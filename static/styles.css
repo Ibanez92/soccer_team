@@ -314,15 +314,18 @@ footer {
     }
 
     .team-pic,
-    .team-pic2,
-    .description {
+    .team-pic2 {
         max-width: 95%;
     }
-
-    
+    .description {
+        max-width: 100%;
+        width: 90%;
+    }
+    .description p {
+        font-size: 15px;
+    }
     .description-title {
-        padding-top: 10px;
-        font-size: 47px;
+        font-size: 44px;
         padding-bottom: 10px;
     }
 
@@ -428,7 +431,7 @@ footer {
     }
     .description-title {
         padding-top: 10px;
-        font-size: 36px;
+        font-size: 34px;
         padding-bottom: 10px;
     }
 
