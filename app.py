@@ -43,11 +43,13 @@ def players():
 def home():
     return render_template("index.html")
 
+@app.route("/schedule")
+def schedule():
+    return render_template("schedule.html")
 
 @app.route("/contact", methods=["GET"])
 def contact():
     return render_template("index.html")
-
 
 @app.route("/submit", methods=["POST"])
 def submit_contact_form():
