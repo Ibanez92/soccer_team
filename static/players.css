@@ -165,11 +165,6 @@ footer {
         padding-bottom: 10px;
     }
 
-    nav ul li a i {
-        padding-right: 3px;
-        /* Add right padding to the icon */
-    }
-
     .description p {
         font-size: 16px;
     }
