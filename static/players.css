@@ -47,6 +47,11 @@ nav ul li a {
     font-family: "Roboto", Arial, sans-serif;
 }
 
+nav ul li a i {
+    padding-right: 3px;
+    /* Add right padding to the icon */
+}
+
 .page-container {
     padding: 15px;
 }
@@ -117,12 +122,22 @@ footer {
         justify-content: center;
     }
 
+    nav ul li a i {
+        padding-right: 3px;
+        /* Add right padding to the icon */
+    }
+
 }
 
 @media screen and (max-width: 768px) {
     nav ul {
         display: flex;
         justify-content: center;
+    }
+
+    nav ul li a i {
+        padding-right: 3px;
+        /* Add right padding to the icon */
     }
 
     .title {
@@ -148,10 +163,19 @@ footer {
     .description h3 {
         font-size: 38px;
         padding-bottom: 10px;
+    }
 
+    nav ul li a i {
+        padding-right: 3px;
+        /* Add right padding to the icon */
     }
 
     .description p {
         font-size: 16px;
+    }
+
+    .player-card {
+        max-width: 100%;
+        width: 86%;
     }
 }

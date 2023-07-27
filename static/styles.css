@@ -45,8 +45,12 @@ nav ul li a {
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
+nav ul li a i {
+    padding-right: 3px; /* Add right padding to the icon */
+}
 .main {
     margin: 20px;
     display: flex;
