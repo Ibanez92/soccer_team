@@ -94,6 +94,11 @@ footer {
         justify-content: center;
     }
 
+    #calendar {
+        max-width: 100%;
+        width: 95%;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -104,6 +109,7 @@ footer {
     }
 
     #calendar {
+        width: 100%;
         max-width: 100%; /* Make the calendar occupy the full width of the container on small screens */
         margin: 0; /* Remove the margin to center the calendar properly */
         flex-basis: 1;
@@ -120,6 +126,7 @@ footer {
     }
 
     #calendar {
+        width: 100%;
         max-width: 100%; /* Make the calendar occupy the full width of the container on small screens */
         margin: 0; /* Remove the margin to center the calendar properly */
     }
