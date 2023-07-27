@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h3>Document</h3>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Spartan Schedule</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='schedule.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="spartan-icon" src="{{ url_for('static', filename='images/spartan_logo.png') }}" alt="Custom Icon">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="/players"><i class="fas fa-users"></i>Players</a></li>
+                <li><a href="/schedule"><i class="fas fa-calendar"></i>Schedule</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <p>&copy; 2023 U8 Spartan Soccer</p>
+        </footer>
+    </body>
 </html>
