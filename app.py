@@ -43,9 +43,9 @@ def players():
 def home():
     return render_template("index.html")
 
-@app.route("/schedule")
-def schedule():
-    return render_template("schedule.html")
+@app.route("/calendar")
+def calendar():
+    return render_template("calendar.html")
 
 @app.route("/contact", methods=["GET"])
 def contact():
