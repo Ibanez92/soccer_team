@@ -44,7 +44,7 @@ nav ul li a {
     color: #3a3939;
     padding: 10px;
     text-decoration: none;
-    font-weight: bold
+    font-weight: bold;
 }
 
 .main {
@@ -112,9 +112,11 @@ nav ul li a {
 }
 
 .calendar-container {
-    padding-top: 30px;
     flex-basis: 50%;
-    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .calendar {
