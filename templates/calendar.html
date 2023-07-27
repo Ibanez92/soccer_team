@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.8/index.global.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.8/index.global.min.js'></script>
     </head>
     <body>
         <header>
@@ -20,8 +23,43 @@
                 <li><a href="/calendar"><i class="fas fa-calendar"></i>Calendar</a></li>
             </ul>
         </nav>
+        <!-- Container for the calendar -->
+        <main class="cal-container">
+            <div id="calendar"></div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var calendarEl = document.getElementById('calendar');
+
+                    var calendar = new FullCalendar.Calendar(calendarEl, { // Add your events here or fetch them from the server
+                        events: [
+                            {
+                                title: 'Practice',
+                                start: '2023-07-20T10:00:00',
+                                end: '2023-07-20T12:00:00',
+                                color: '#2752fb'
+                            }, {
+                                title: 'Game',
+                                start: '2023-07-24T14:00:00',
+                                end: '2023-07-24T16:00:00',
+                                color: '#e91e63'
+                            },
+                            // Add more events here
+                        ],
+                        headerToolbar: {
+                            left: 'prev,next today',
+                            center: 'title',
+                            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                        }
+                    });
+
+                    calendar.render();
+                });
+            </script>
+        </main>
         <footer>
             <p>&copy; 2023 U8 Spartan Soccer</p>
         </footer>
+
+
     </body>
 </html>
