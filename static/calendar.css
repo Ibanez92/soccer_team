@@ -65,10 +65,7 @@ nav ul li a i {
     align-items: center; /* Center the content horizontally */
     justify-content: center; /* Push the header and footer to the top and bottom */
     flex-direction: column; /* Stack the header, calendar, and footer vertically on small screens */
-
 }
-
-
 
 #calendar {
     max-width: 800px; /* Adjust the width as needed */
