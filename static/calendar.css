@@ -113,7 +113,10 @@ footer {
         max-width: 100%;
         width: 95%;
     }
-
+    nav ul li a i {
+        padding-right: 3px;
+        /* Add right padding to the icon */
+    }
 }
 
 @media screen and (max-width: 768px) {
