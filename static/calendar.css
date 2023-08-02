@@ -132,9 +132,8 @@ footer {
         margin: 0; /* Remove the margin to center the calendar properly */
         flex-basis: 1;
     }
-    nav ul {
-        display: flex;
-        justify-content: center;
+    header .spartan-icon {
+        max-width: 140px;
     }
 }
 

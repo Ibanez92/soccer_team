@@ -151,7 +151,7 @@ footer {
 
     /* Adjust the layout of the player cards for smaller screens */
     .player-card {
-        width: 100%;
+        width: 65%;
         /* Make player cards occupy the full width of the screen */
         margin: 10px 0;
         /* Add spacing between player cards */

@@ -9,8 +9,8 @@
         rel="stylesheet" type="text/css" href="{{ url_for('static', filename='calendar.css') }}">
         <!-- for navbar icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <meta
-        name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- for mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- google fonts -->
         <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -54,7 +54,7 @@
                     headerToolbar: {
                         left: 'prev,next today',
                         center: 'title',
-                        right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+                        right: 'dayGridMonth,listMonth'
                     },
                     dayMaxEvents: true,
                     // Show a Bootstrap modal with the event title and details when an event is clicked
