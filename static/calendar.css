@@ -79,6 +79,19 @@ nav ul li a i {
     /* Add some top margin to create space between the header and the calendar */
 }
 
+.fc-daygrid-week-number{
+    text-decoration: none;
+}
+
+.fc-daygrid-day-number{
+    text-decoration: none;
+
+}
+
+.fc-col-header-cell-cushion {
+    text-decoration: none;
+}
+
 footer {
     background-color: #2752fb;
     color: #fff;
