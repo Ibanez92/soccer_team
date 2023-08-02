@@ -81,15 +81,17 @@ nav ul li a i {
 
 .fc-daygrid-week-number{
     text-decoration: none;
+    font-weight: bold;
 }
 
 .fc-daygrid-day-number{
     text-decoration: none;
-
+    color: #3a3939;
 }
 
 .fc-col-header-cell-cushion {
     text-decoration: none;
+    color: #3a3939;
 }
 
 footer {
