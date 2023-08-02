@@ -110,7 +110,7 @@ nav ul li a i {
 footer {
     background-color: #2752fb;
     color: #fff;
-    padding: 10px;
+    padding: 2px;
     text-align: center;
 }
 
@@ -133,11 +133,6 @@ footer {
     nav ul {
         display: flex;
         justify-content: center;
-    }
-
-    nav ul li a i {
-        padding-right: 3px;
-        /* Add right padding to the icon */
     }
 
     .title {
