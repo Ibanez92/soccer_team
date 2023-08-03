@@ -4,10 +4,10 @@ This is a responsive portfolio created using some animated CSS, Javascript, and 
 
 # Screenshot of app
 ![Alt text](static/images/spartan_soccer_sc.png)
+
 # Demo video of Desktop version
-![Alt text](<Spartan U8 Team Website.gif>)
-<!-- ![Animated GIF-downsized_large (port)](https://user-images.githubusercontent.com/69645144/110292349-0d14a200-7fbb-11eb-8639-8a431d3221b5.gif) -->
+![Alt text](<static/images/Spartan U8 Team Website.gif>)
 
 # Demo video of Mobile version
 
-<!-- ![Animated GIF-downsized_large (portmobile)](https://user-images.githubusercontent.com/69645144/110297183-31737d00-7fc1-11eb-9cf2-88c35e8bc341.gif) -->
+![Alt text](<static/images/Spartan U8 Team Website (mobile).gif>)
