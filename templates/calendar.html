@@ -29,9 +29,10 @@
         <!-- <script src='fullcalendar/dist/index.global.js'></script> -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                var events = {{ events_json|safe }};
-                console.log(events);
-                var calendarEl = document.getElementById('calendar');
+                const events = {{ events_json|safe }};
+                // checking to make sure events are being sent to the browser
+                // console.log(events);
+                const calendarEl = document.getElementById('calendar');
 
                 var calendar = new FullCalendar.Calendar(calendarEl, {
                     events: events,
