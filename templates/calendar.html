@@ -3,7 +3,7 @@
     <head>
         <!-- "Unicode Transformation Format - 8-bit" and is a character encoding standard -->
         <meta charset="UTF-8">
-        <!-- Address compatibility issues that may arise when displaying webpages in older versions of Internet Explorer. -->
+        <!-- Address compatibility issues that may arise when displaying webpages in older versions of Internet Explorer -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- Text on browser tab -->
         <title>Spartan Calendar</title>
@@ -13,19 +13,19 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <!-- For mobile -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- google fonts -->
+        <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <!-- Bootstrap Icons stylesheet -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <!-- Add Bootstrap CSS link -->
+        <!-- Bootstrap CSS links -->
         <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'>
         <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css' rel='stylesheet'>
-        <!-- Add Bootstrap JS link (and jQuery if not already included)/ for modal-->
+        <!-- Bootstrap JS link (and jQuery if not already included)/ for modal-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- the standard fullcalendar bundle CDN -->
+        <!-- The standard fullcalendar bundle CDN -->
         <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
-        <!-- <script src='fullcalendar/dist/index.global.js'></script> -->
+        <!-- Javascript for FullCalendar specifics and functionallity -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const events = {{ events_json|safe }};
@@ -53,13 +53,14 @@
 
                 calendar.render();
             });
-
         </script>
     </head>
     <body>
         <header>
+            <!-- Spartan icon on the top of the page/navbar -->
             <img class="spartan-icon" src="{{ url_for('static', filename='images/spartan_logo.png') }}" alt="Custom Icon">
         </header>
+        <!-- Navbar for page -->
         <nav>
             <ul>
                 <li><a href="/"><i class="fas fa-home"></i>Home</a></li>
