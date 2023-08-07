@@ -34,7 +34,7 @@
                 // console.log(events);
                 const calendarEl = document.getElementById('calendar');
 
-                var calendar = new FullCalendar.Calendar(calendarEl, {
+                const calendar = new FullCalendar.Calendar(calendarEl, {
                     events: events,
                     themeSystem: 'bootstrap5',
                     headerToolbar: {
@@ -45,7 +45,7 @@
                     dayMaxEvents: true,
                     // Show a Bootstrap modal with the event title and details when an event is clicked
                     eventClick: function (info) { 
-                        var modalContent = '<h5>' + info.event.title + '</h5>' + '<p>Start: ' + info.event.start.toLocaleString() + '</p>' + '<p>End: ' + info.event.end.toLocaleString() + '</p>';
+                        const modalContent = '<h5>' + info.event.title + '</h5>' + '<p>Start: ' + info.event.start.toLocaleString() + '</p>' + '<p>End: ' + info.event.end.toLocaleString() + '</p>';
 
                         $('#eventModal .modal-body').html(modalContent);
                         $('#eventModal').modal('show');
