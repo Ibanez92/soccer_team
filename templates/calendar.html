@@ -33,21 +33,6 @@
                 console.log(events);
                 var calendarEl = document.getElementById('calendar');
 
-                // var calendar = new FullCalendar.Calendar(calendarEl, {
-                //     timeZone: 'UTC',
-                //     themeSystem: 'bootstrap5',
-                //     headerToolbar: {
-                //         left: 'prev,next today',
-                //         center: 'title',
-                //         right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
-                //     },
-                //     weekNumbers: true,
-                //     dayMaxEvents: true, // allow "more" link when too many events
-                //     events: '/api/demo-feeds/events.json'
-                // });
-                // Retrieve the events data passed from Flask
-
-                // Initialize FullCalendar with the fetched events
                 var calendar = new FullCalendar.Calendar(calendarEl, {
                     events: events,
                     themeSystem: 'bootstrap5',
@@ -69,43 +54,6 @@
                 calendar.render();
             });
 
-            // document.addEventListener('DOMContentLoaded', function () {
-            //     var calendarEl = document.getElementById('calendar');
-
-            //     var calendar = new FullCalendar.Calendar(calendarEl, {
-            // Add your events here or fetch them from the server
-            // themeSystem: 'bootstrap5',
-            // initialView: 'dayGridMonth',
-            // events: [
-            //     {
-            //         title: 'Practice',
-            //         start: '2023-07-20T10:00:00',
-            //         end: '2023-07-20T12:00:00',
-            //         color: '#2752fb'
-            //     }, {
-            //         title: 'Game',
-            //         start: '2023-07-24T14:00:00',
-            //         end: '2023-07-24T16:00:00',
-            //         color: '#e91e63'
-            //     },
-            // Add more events here
-            // ],
-            // headerToolbar: {
-            //     left: 'prev,next today',
-            //     center: 'title',
-            //     right: 'dayGridMonth,timeGridWeek,timeGridDay'
-            // },
-            // eventClick: function (info) {
-            // Show a Bootstrap modal with the event title and details when an event is clicked
-            //             var modalContent = '<h5>' + info.event.title + '</h5>' + '<p>Start: ' + info.event.start.toLocaleString() + '</p>' + '<p>End: ' + info.event.end.toLocaleString() + '</p>';
-
-            //             $('#eventModal .modal-body').html(modalContent);
-            //             $('#eventModal').modal('show');
-            //         }
-            //     });
-
-            //     calendar.render();
-            // });
         </script>
     </head>
     <body>
